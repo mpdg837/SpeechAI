@@ -1,0 +1,74 @@
+\babel@toc {polish}{}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Zakres dźwięków słyszalnych dla ludzkiego ucha w~zależności od ich częstotliwości i~poziomu natężenia (ciśnienia)~\blx@tocontentsinit {0}\cite {DzwiekiUcho}}}{13}{figure.caption.2}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Schemat filtru FIR~\blx@tocontentsinit {0}\cite {Wiki:FIR}.}}{14}{figure.caption.3}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Ilustracja algorytmu \textit {MFCC}~\blx@tocontentsinit {0}\cite {MFCC:Rys}}}{15}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Porównanie widma sygnału dla okna prostokątnego i~okna \textit {Hamminga} \blx@tocontentsinit {0}\cite {AGH:Okna} - listki boczne są znacznie mniejsze niż dla prostokątnego odpowiednika}}{16}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Schemat modelu systemu wykrywającego wzór \blx@tocontentsinit {0}\cite {Pattern:ResearchGate}}}{17}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Przykład działania algorytmu \textit {KNN} w~dwuwymiarowej przestrzeni}}{18}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Wyrazy zawarte w~bazie \textit {mini\_speech\_commands} \blx@tocontentsinit {0}\cite {Baza:Mowa}}}{21}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Detekcja wyrazów w~projektowanym systemie}}{22}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Algorytm wyboru fragmentu do analizy z~sygnału mikrofonowego}}{23}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Wybór „głośnego” fragmentu do analizy}}{24}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Tablica skali melowej}}{25}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Fragment skryptu wykonanego w~języku \textit {Python} pozwalający na zamianę skali z~liniowej na melową (logarytmiczną)}}{25}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Profil wyrazu \textit {sheila}}}{26}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Ilustracja dekompresji danych}}{27}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Schemat działania klasyfikatora}}{29}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Schemat treningu modelu sztucznej inteligencji dla projektowanego systemu}}{30}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Schemat ułożenia danych w~pierwszym sektorze nośnika}}{32}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Schemat nagłówka modelu}}{33}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Płytka \textit {Terrasic DE10-Lite}}}{35}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Uproszczony schemat systemu wykrywającego}}{36}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Automat stanów modułu \textit {DMA}}}{38}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Architektura koprocesora sygnałowego}}{39}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Automat stanów modułu \textit {loader}}}{40}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Automat stanów modułu \textit {saver}}}{40}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Zamiana wartości 16-bitowych na 32-bitowe oraz schemat wejść i~wyjść do zewnętrznego modułu \textit {dfft\_top}}}{42}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Automat stanów modułu \textit {mel\_spect}}}{44}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Rejestry komponentu \textit {Signal\_Processor}}}{45}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Architektura komponentu klasyfikatora}}{45}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Pakiet informacji otrzymywany podczas jednej transakcji \textit {Avalon Stream} od komponentu obsługującego nośniki.}}{47}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Pakiet informacji wysyłany podczas jednej transakcji \textit {Avalon Stream} do komponentu obsługującego nośniki.}}{47}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Architektura rdzenia komponentu klasyfikatora}}{48}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Architektura rdzenia komponentu klasyfikatora}}{49}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Pakiet zawierający pełny sektor nośnika przesyłany do rdzenia}}{50}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Automat stanów modułu \textit {loader}}}{51}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Pakiet informacji wysyłana z~komponentu dekompresującego, skróty \textit {Zdeko.} - zdekompresowany, \textit {War.} - wartość }}{51}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Pakiet tworzony przez moduł \textit {category}}}{52}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Pakiet tworzony przez moduł \textit {core\_collect}}}{53}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Automat stanów \textit {collector}}}{54}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Rejestry wynikowe modułu \textit {scorer} gdzie określono pozycję punktów w~rejestrach dla danej kategorii}}{55}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Rejestry konfiguracyjne komponentu \textit {AI\_comparer}}}{57}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Schemat komponentu \textit {AI\_DMA}}}{58}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Rejestry komponentu \textit {AI\_DMA}}}{59}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Schemat komponentu \textit {Normalizer}}}{61}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Schemat automatu \textit {controller}}}{62}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Rejestry komponentu \textit {Normalizer}}}{63}{figure.caption.48}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Schemat systemu}}{64}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Schemat architektury komponentu \textit {SpeedSPI}}}{66}{figure.caption.50}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Schemat rdzenia dla odczytu jednej karty SD}}{68}{figure.caption.51}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Blok danych wysyłany do karty SD wydania jej polecenia}}{68}{figure.caption.52}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Procedura inicjacji karty zgodnie z~specyfikacją \blx@tocontentsinit {0}\cite {SDA}}}{70}{figure.caption.53}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Rejestry sterujące rdzeniem}}{71}{figure.caption.54}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Rejestry komponentu \textit {Speed\_SPI}}}{72}{figure.caption.56}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Schemat komponentu obsługującego mikrofon}}{72}{figure.caption.57}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Komunikacja z~mikrofonem po I$^2$S}}{73}{figure.caption.58}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Współczynniki filtru komponentu \textit {Microphone}}}{73}{figure.caption.59}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Rejestry komponentu \textit {Microphone}}}{74}{figure.caption.60}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Schemat komponentu odtwarzającego dźwięki}}{74}{figure.caption.61}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Współczynniki filtru w~komponencie \textit {Audio\_PWM}}}{75}{figure.caption.62}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Kod generatora \textit {sigma-delta}}}{76}{figure.caption.63}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Rejestry komponentu \textit {Microphone}}}{76}{figure.caption.64}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Schemat podłączenia komponentów zewnętrznych do układu FPGA i~źródeł zasilania}}{78}{figure.caption.65}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Wykaz wyprowadzeń dla projektu dla projektu}}{79}{figure.caption.66}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Kod funkcji kopiującej dane z~dedykowanej pamięci \textit {AI\_RAM}}}{81}{figure.caption.67}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Kod funkcji normalizującej w~dziedzinie czasu}}{83}{figure.caption.68}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Raport kompilacji oprogramowania węzła}}{88}{figure.caption.69}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Zużycie zasobów dla poszczególnych komponentów}}{88}{figure.caption.70}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Zużycie zasobów sprzętowych po podłączeniu wszystkich komponentów do procesora NIOS dla wersji systemu obsługującej SPI o~szybkości 67 MHz}}{89}{figure.caption.71}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Maksymalna częstotliwość dla danych domen zegarowych dla wersji obsługującej SPI o~szybkości 67 MHz dla temperatury 85°C}}{90}{figure.caption.72}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Maksymalna częstotliwość dla danych domen zegarowych dla wersji obsługującej SPI o~szybkości 67 MHz dla temperatury 0°C}}{90}{figure.caption.73}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Zdjęcie prototypu w~obudowie}}{93}{figure.caption.74}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Zrzut ekranu z~programu \textit {BLE Terminal} pokazujący działanie komunikacji między węzłem a~innym urządzeniem}}{93}{figure.caption.75}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Zrzut ekranu z~ułożeniem komponentów SoC w~\textit {Platform Designerze}}}{106}{figure.caption.79}%
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Rozłożenie bloków po syntezie projektu w~układzie \textit {FPGA}. Bloki (\textit {logic elements}) zaznaczono kolorem ciemnoniebieskim , bloki \textit {DSP} szarym zaś pamięci \textit {M9K} zielonym.}}{107}{figure.caption.80}%

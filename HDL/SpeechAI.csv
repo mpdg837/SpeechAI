@@ -1,0 +1,78 @@
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+
+# Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# File: C:\PD\wezel-iot-fpga\HDL\SpeechAI.csv
+# Generated on: Sat Apr 27 20:15:16 2024
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Strict Preservation
+audio1_audio[7],Output,PIN_AA20,4,B4_N0,3.3-V LVTTL,,,,,
+audio1_audio[6],Output,PIN_AB21,4,B4_N0,3.3-V LVTTL,,,,,
+audio1_audio[5],Output,PIN_AA17,4,B4_N0,3.3-V LVTTL,,,,,
+audio1_audio[4],Output,PIN_AB17,4,B4_N0,3.3-V LVTTL,,,,,
+audio1_audio[3],Output,PIN_AA12,4,B4_N0,3.3-V LVTTL,,,,,
+audio1_audio[2],Output,PIN_AA11,4,B4_N0,3.3-V LVTTL,,,,,
+audio1_audio[1],Output,PIN_Y10,3,B3_N0,3.3-V LVTTL,,,,,
+audio1_audio[0],Output,PIN_AB9,3,B3_N0,3.3-V LVTTL,,,,,
+audio_audio[7],Output,PIN_V10,3,B3_N0,3.3-V LVTTL,,8ma,,,
+audio_audio[6],Output,PIN_W10,3,B3_N0,3.3-V LVTTL,,8ma,,,
+audio_audio[5],Output,PIN_V9,3,B3_N0,3.3-V LVTTL,,8ma,,,
+audio_audio[4],Output,PIN_W9,3,B3_N0,3.3-V LVTTL,,8ma,,,
+audio_audio[3],Output,PIN_V8,3,B3_N0,3.3-V LVTTL,,8ma,,,
+audio_audio[2],Output,PIN_W8,3,B3_N0,3.3-V LVTTL,,8ma,,,
+audio_audio[1],Output,PIN_V7,3,B3_N0,3.3-V LVTTL,,8ma,,,
+audio_audio[0],Output,PIN_W7,3,B3_N0,3.3-V LVTTL,,8ma,,,
+bgpio_enable,Output,PIN_AA6,3,B3_N0,3.3-V LVTTL,,,,,
+bgpio_status,Input,PIN_Y5,3,B3_N0,3.3-V LVTTL,,,,,
+button_button,Input,PIN_W5,3,B3_N0,3.3-V LVTTL,,,,,
+clk_clk,Input,PIN_P11,3,B3_N0,3.3-V LVTTL,,8ma,,,
+dis_a0,Output,PIN_AB2,3,B3_N0,3.3-V LVTTL,,,,,
+dis_d0,Input,PIN_AA2,3,B3_N0,3.3-V LVTTL,,,,,
+gpio_readdata[9],Output,PIN_A11,7,B7_N0,3.3-V LVTTL,,,,,
+gpio_readdata[8],Output,PIN_B11,7,B7_N0,3.3-V LVTTL,,,,,
+gpio_readdata[7],Output,PIN_A8,7,B7_N0,3.3-V LVTTL,,,,,
+gpio_readdata[6],Output,PIN_A9,7,B7_N0,3.3-V LVTTL,,,,,
+gpio_readdata[5],Output,PIN_A10,7,B7_N0,3.3-V LVTTL,,,,,
+gpio_readdata[4],Output,PIN_B10,7,B7_N0,3.3-V LVTTL,,,,,
+gpio_readdata[3],Output,PIN_AB19,4,B4_N0,3.3-V LVTTL,,,,,
+gpio_readdata[2],Output,PIN_AA19,4,B4_N0,3.3-V LVTTL,,,,,
+gpio_readdata[1],Output,PIN_Y19,4,B4_N0,3.3-V LVTTL,,,,,
+gpio_readdata[0],Output,PIN_AB20,4,B4_N0,3.3-V LVTTL,,,,,
+mic_da,Bidir,PIN_AA5,3,B3_N0,3.3-V LVTTL,,,,,
+mic_sck,Output,PIN_Y4,3,B3_N0,3.3-V LVTTL,,,,,
+mic_sel,Output,PIN_AB3,3,B3_N0,3.3-V LVTTL,,,,,
+mic_ws,Output,PIN_Y3,3,B3_N0,3.3-V LVTTL,,,,,
+reset_reset_n,Input,PIN_B8,7,B7_N0,3.3-V LVTTL,,,,,
+spix4_spi1_cs,Output,PIN_AA14,4,B4_N0,3.3-V LVTTL,,,,,
+spix4_spi1_miso,Bidir,PIN_W13,4,B4_N0,3.3-V LVTTL,,,,,
+spix4_spi1_mosi,Bidir,PIN_W12,4,B4_N0,3.3-V LVTTL,,,,,
+spix4_spi1_sclk,Output,PIN_AB13,4,B4_N0,3.3-V LVTTL,,,,,
+spix4_spi2_cs,Output,PIN_W11,4,B4_N0,3.3-V LVTTL,,,,,
+spix4_spi2_miso,Bidir,PIN_Y11,4,B4_N0,3.3-V LVTTL,,,,,
+spix4_spi2_mosi,Bidir,PIN_AB12,4,B4_N0,3.3-V LVTTL,,,,,
+spix4_spi2_sclk,Output,PIN_AB11,4,B4_N0,3.3-V LVTTL,,,,,
+spix4_spi3_cs,Output,PIN_Y8,3,B3_N0,3.3-V LVTTL,,,,,
+spix4_spi3_miso,Bidir,PIN_AA10,3,B3_N0,3.3-V LVTTL,,,,,
+spix4_spi3_mosi,Bidir,PIN_AB10,4,B4_N0,3.3-V LVTTL,,,,,
+spix4_spi3_sclk,Output,PIN_AA9,3,B3_N0,3.3-V LVTTL,,,,,
+spix4_spi4_cs,Output,PIN_Y6,3,B3_N0,3.3-V LVTTL,,,,,
+spix4_spi4_miso,Bidir,PIN_Y7,3,B3_N0,3.3-V LVTTL,,,,,
+spix4_spi4_mosi,Bidir,PIN_AA8,3,B3_N0,3.3-V LVTTL,,,,,
+spix4_spi4_sclk,Output,PIN_AA7,3,B3_N0,3.3-V LVTTL,,,,,
+uart_rx,Input,PIN_W6,3,B3_N0,3.3-V LVTTL,,,,,
+uart_tx,Output,PIN_V5,3,B3_N0,3.3-V LVTTL,,,,,
+vbutton_vbutton,Input,PIN_AA15,4,B4_N0,3.3-V LVTTL,,,,,
+reset_reset,Unknown,,,,3.3-V LVTTL,,,,,

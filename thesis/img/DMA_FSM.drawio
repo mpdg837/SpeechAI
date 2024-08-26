@@ -1,0 +1,97 @@
+<mxfile host="Electron" modified="2024-05-12T16:20:16.573Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="DaP4B7X-mnGi6ufpoI4i" version="23.1.5" type="device">
+  <diagram name="Strona-1" id="qhjlecZrfErG3EmEXIc5">
+    <mxGraphModel dx="989" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="700" pageHeight="220" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-10" value="&lt;i&gt;dma_write&lt;/i&gt;&lt;div&gt;addr = dma_addr&lt;/div&gt;&lt;div&gt;mem = dma_writedata&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="nLh6Hw3wDIEMh4GKDwiy-4" target="nLh6Hw3wDIEMh4GKDwiy-7">
+          <mxGeometry x="-1" y="-39" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="126" />
+              <mxPoint x="130" y="155" />
+            </Array>
+            <mxPoint x="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-11" value="&lt;i&gt;dma_read&lt;br&gt;&lt;/i&gt;addr = dma_addr&lt;br&gt;mem = 0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="nLh6Hw3wDIEMh4GKDwiy-4" target="nLh6Hw3wDIEMh4GKDwiy-5">
+          <mxGeometry x="-1" y="35" relative="1" as="geometry">
+            <mxPoint x="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-4" value="IDLE" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="83" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-14" value="&lt;i&gt;~avmm.waitrequest&lt;/i&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nLh6Hw3wDIEMh4GKDwiy-5" target="nLh6Hw3wDIEMh4GKDwiy-6">
+          <mxGeometry y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-5" value="READ_ WAIT" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="35" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nLh6Hw3wDIEMh4GKDwiy-6" target="nLh6Hw3wDIEMh4GKDwiy-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-20" value="&lt;i&gt;avmm.readdatavalid&lt;br&gt;&lt;/i&gt;mem = avmm.readdata" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nLh6Hw3wDIEMh4GKDwiy-13">
+          <mxGeometry x="0.0361" y="2" relative="1" as="geometry">
+            <mxPoint y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-6" value="READ_ READ" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="35" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nLh6Hw3wDIEMh4GKDwiy-7" target="nLh6Hw3wDIEMh4GKDwiy-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-19" value="~avmm.waitrequest" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nLh6Hw3wDIEMh4GKDwiy-12">
+          <mxGeometry x="-0.1578" y="-3" relative="1" as="geometry">
+            <mxPoint y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-7" value="WRITE_ WAIT" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="125" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-15" value="dma_rdy = 1&lt;br&gt;dma_readdata = mem" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;elbow=vertical;curved=1;" edge="1" parent="1" source="nLh6Hw3wDIEMh4GKDwiy-8" target="nLh6Hw3wDIEMh4GKDwiy-4">
+          <mxGeometry x="-0.3771" y="-15" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="65" />
+              <mxPoint x="650" y="108" />
+              <mxPoint x="610" y="108" />
+              <mxPoint x="610" y="105" />
+              <mxPoint x="305" y="105" />
+              <mxPoint x="305" y="108" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-8" value="READ_ FINISH" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="35" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="nLh6Hw3wDIEMh4GKDwiy-9" target="nLh6Hw3wDIEMh4GKDwiy-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="155" />
+              <mxPoint x="650" y="115" />
+              <mxPoint x="305" y="115" />
+              <mxPoint x="305" y="108" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-23" value="dma_rdy = 1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nLh6Hw3wDIEMh4GKDwiy-16">
+          <mxGeometry x="-0.376" y="4" relative="1" as="geometry">
+            <mxPoint y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-9" value="WRITE_ FINISH" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="125" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-21" value="avmm.addr = addr&lt;br&gt;avmm.read = 1&#39;b1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="125" y="5" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-22" value="avmm.addr = addr&lt;br&gt;avmm.write = 1&#39;b1&lt;br&gt;avmm.writedata = mem" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="230" y="170" width="140" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

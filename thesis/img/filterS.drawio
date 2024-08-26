@@ -1,0 +1,99 @@
+<mxfile host="Electron" modified="2024-05-04T05:45:48.881Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="yJ2uvkPLzro5O939kTSx" version="23.1.5" type="device">
+  <diagram name="Strona-1" id="tKh5jBK7ZMCCm5xY7gQM">
+    <mxGraphModel dx="676" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="600" pageHeight="300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GFYSmypETnpFk3FitQDg-58" value="b&lt;sub&gt;0&lt;/sub&gt;" style="triangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="20" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFYSmypETnpFk3FitQDg-59" target="GFYSmypETnpFk3FitQDg-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-59" value="b&lt;span style=&quot;font-size: 10px;&quot;&gt;1&lt;/span&gt;" style="triangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="70" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFYSmypETnpFk3FitQDg-60" target="GFYSmypETnpFk3FitQDg-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-60" value="b&lt;span style=&quot;font-size: 10px;&quot;&gt;p&lt;/span&gt;" style="triangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="230" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-61" value="+" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="25" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.094;entryY=0.523;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GFYSmypETnpFk3FitQDg-58" target="GFYSmypETnpFk3FitQDg-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-65" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="225" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-66" value="&lt;i&gt;wyjście&lt;/i&gt;" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="GFYSmypETnpFk3FitQDg-61">
+          <mxGeometry x="0.1111" y="10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="225" y="100" as="sourcePoint" />
+            <mxPoint x="505" y="40" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFYSmypETnpFk3FitQDg-67" target="GFYSmypETnpFk3FitQDg-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFYSmypETnpFk3FitQDg-67" target="GFYSmypETnpFk3FitQDg-59">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="175" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-67" value="z&lt;sup&gt;-1&lt;/sup&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="55" width="40" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFYSmypETnpFk3FitQDg-68" target="GFYSmypETnpFk3FitQDg-60">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="175" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-68" value="z&lt;sup&gt;-1&lt;/sup&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="220" width="40" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-69" value="&lt;i&gt;wejście&lt;/i&gt;" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="GFYSmypETnpFk3FitQDg-58">
+          <mxGeometry x="-0.4286" y="10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="40" as="sourcePoint" />
+            <mxPoint x="275" y="50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="175" y="40" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-70" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="GFYSmypETnpFk3FitQDg-67">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="175" y="40" as="sourcePoint" />
+            <mxPoint x="275" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFYSmypETnpFk3FitQDg-73" target="GFYSmypETnpFk3FitQDg-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-73" value="b&lt;span style=&quot;font-size: 10px;&quot;&gt;2&lt;/span&gt;" style="triangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="120" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFYSmypETnpFk3FitQDg-75" target="GFYSmypETnpFk3FitQDg-73">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="175" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 2;" edge="1" parent="1" source="GFYSmypETnpFk3FitQDg-75" target="GFYSmypETnpFk3FitQDg-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GFYSmypETnpFk3FitQDg-75" value="z&lt;sup&gt;-1&lt;/sup&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="110" width="40" height="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

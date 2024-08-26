@@ -1,0 +1,100 @@
+<mxfile host="Electron" modified="2024-05-20T13:18:51.850Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="tUHnHesWMh1VkwHDGRQ5" version="23.1.5" type="device">
+  <diagram name="Strona-1" id="qhjlecZrfErG3EmEXIc5">
+    <mxGraphModel dx="637" dy="425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="700" pageHeight="220" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CpuY23wt4_82asa5ZrPF-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="nLh6Hw3wDIEMh4GKDwiy-4" target="CpuY23wt4_82asa5ZrPF-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-6" value="&lt;i&gt;stream_rdy&lt;/i&gt;&lt;br&gt;next_mem = stream_in&lt;br&gt;mem = next_mem&lt;br&gt;last_mem = mem&lt;br&gt;last1 = next1, last2 = next2&lt;br&gt;last3 = next3, last4 = next4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CpuY23wt4_82asa5ZrPF-5">
+          <mxGeometry x="-0.1966" relative="1" as="geometry">
+            <mxPoint x="4" y="45" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="CpuY23wt4_82asa5ZrPF-1" target="CpuY23wt4_82asa5ZrPF-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="142.94" />
+              <mxPoint x="450" y="142.94" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-12" value="&lt;span style=&quot;background-color: rgb(27, 29, 30);&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CpuY23wt4_82asa5ZrPF-10">
+          <mxGeometry x="-0.2011" y="4" relative="1" as="geometry">
+            <mxPoint x="28" y="31" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-22" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;start &amp;amp; c_ram_rdy&lt;/i&gt;&lt;/div&gt;&lt;div&gt;*&lt;/div&gt;&lt;div&gt;counter += 1&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CpuY23wt4_82asa5ZrPF-10">
+          <mxGeometry x="-0.2432" y="3" relative="1" as="geometry">
+            <mxPoint x="14" y="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="CpuY23wt4_82asa5ZrPF-1" target="nLh6Hw3wDIEMh4GKDwiy-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="343" y="69.97" />
+              <mxPoint x="135" y="69.97" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-13" value="&lt;i&gt;!start &amp;amp; c_ram_rdy&lt;br&gt;*&lt;br&gt;&lt;/i&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CpuY23wt4_82asa5ZrPF-11">
+          <mxGeometry x="0.0396" y="4" relative="1" as="geometry">
+            <mxPoint x="-47" y="26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-1" value="GET" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="99.94" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="CpuY23wt4_82asa5ZrPF-2" target="nLh6Hw3wDIEMh4GKDwiy-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="125" />
+              <mxPoint x="600" y="30" />
+              <mxPoint x="90" y="30" />
+              <mxPoint x="90" y="125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-20" value="&lt;i&gt;data_out_rdy &amp;amp;&amp;amp;&lt;br&gt;counter != sample_size&lt;/i&gt;&lt;br&gt;counter ++" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CpuY23wt4_82asa5ZrPF-8">
+          <mxGeometry x="0.8201" y="4" relative="1" as="geometry">
+            <mxPoint x="-5" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="CpuY23wt4_82asa5ZrPF-2" target="nLh6Hw3wDIEMh4GKDwiy-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="143" />
+              <mxPoint x="640" y="10" />
+              <mxPoint y="10" />
+              <mxPoint y="143" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-19" value="&lt;i&gt;data_out_rdy &amp;amp;&amp;amp; &lt;br&gt;counter == sample_size&lt;/i&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;counter = 0, mem = 0&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;next_mem = 0,&amp;nbsp;last_mem = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CpuY23wt4_82asa5ZrPF-18">
+          <mxGeometry x="-0.4517" y="16" relative="1" as="geometry">
+            <mxPoint x="79" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-2" value="READ" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="99.94" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-14" value="&lt;b&gt;Stream&lt;br&gt;&lt;/b&gt;-&amp;gt; stream_in" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="20" y="149.97" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-16" value="&lt;b&gt;Stream &lt;/b&gt;&lt;i&gt;data_out&lt;/i&gt;&lt;br&gt;{last1,last1,last2,last3,last4,next_mem,mem,last_mem} -&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="350" y="69.97" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nLh6Hw3wDIEMh4GKDwiy-4" value="IDLE" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="99.94" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-23" value="*&#xa;next1 = c_ram_data[7:0]&#xa;next2 = c_ram_data[15:8]&#xa;next3 = c_ram_data[23:16]&#xa;next4 = c_ram_data[31:24]&#xa;start = 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="130" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="CpuY23wt4_82asa5ZrPF-24" value="c_ram_addr = {2&#39;b0, counter[14:1]}" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="39.97" width="190" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

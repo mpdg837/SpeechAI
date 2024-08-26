@@ -1,0 +1,387 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 19:18:14  October 20, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		SpeechAI_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name TOP_LEVEL_ENTITY system
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:18:14  OCTOBER 20, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_P11 -to clk_clk
+set_location_assignment PIN_B8 -to reset_reset_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to reset_reset_n
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name OVERRIDE_DEFAULT_ELECTROMIGRATION_PARAMETERS OFF
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to clk_clk
+set_location_assignment PIN_AA14 -to spix4_spi1_cs
+set_location_assignment PIN_W13 -to spix4_spi1_miso
+set_location_assignment PIN_W12 -to spix4_spi1_mosi
+set_location_assignment PIN_AB13 -to spix4_spi1_sclk
+set_location_assignment PIN_W11 -to spix4_spi2_cs
+set_location_assignment PIN_Y11 -to spix4_spi2_miso
+set_location_assignment PIN_AB12 -to spix4_spi2_mosi
+set_location_assignment PIN_AB11 -to spix4_spi2_sclk
+set_location_assignment PIN_Y8 -to spix4_spi3_cs
+set_location_assignment PIN_AA10 -to spix4_spi3_miso
+set_location_assignment PIN_AB10 -to spix4_spi3_mosi
+set_location_assignment PIN_AA9 -to spix4_spi3_sclk
+set_location_assignment PIN_Y6 -to spix4_spi4_cs
+set_location_assignment PIN_Y7 -to spix4_spi4_miso
+set_location_assignment PIN_AA8 -to spix4_spi4_mosi
+set_location_assignment PIN_AA7 -to spix4_spi4_sclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi1_cs
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi4_sclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi4_miso
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi4_mosi
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi4_cs
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi2_sclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi2_miso
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi1_mosi
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi1_miso
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi1_sclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi2_cs
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi2_mosi
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi3_cs
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi3_miso
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi3_mosi
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to spix4_spi3_sclk
+set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 00000000
+set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE COMP IMAGE WITH ERAM"
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio_audio[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio_audio[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio_audio[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio_audio[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio_audio[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio_audio[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio_audio[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio_audio[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio_audio
+set_location_assignment PIN_V10 -to audio_audio[7]
+set_location_assignment PIN_W10 -to audio_audio[6]
+set_location_assignment PIN_V9 -to audio_audio[5]
+set_location_assignment PIN_W9 -to audio_audio[4]
+set_location_assignment PIN_V8 -to audio_audio[3]
+set_location_assignment PIN_W8 -to audio_audio[2]
+set_location_assignment PIN_V7 -to audio_audio[1]
+set_location_assignment PIN_W7 -to audio_audio[0]
+set_location_assignment PIN_W6 -to uart_rx
+set_location_assignment PIN_V5 -to uart_tx
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to uart_rx
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to uart_tx
+set_location_assignment PIN_AB2 -to dis_a0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dis_a0
+set_location_assignment PIN_AA2 -to dis_d0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dis_d0
+set_location_assignment PIN_AA5 -to mic_da
+set_location_assignment PIN_Y4 -to mic_sck
+set_location_assignment PIN_AB3 -to mic_sel
+set_location_assignment PIN_Y3 -to mic_ws
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to mic_sck
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to mic_da
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to mic_sel
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to mic_ws
+set_global_assignment -name OPTIMIZATION_MODE "HIGH PERFORMANCE EFFORT"
+set_global_assignment -name ALLOW_REGISTER_RETIMING OFF
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to audio_audio[7]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to audio_audio[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to audio_audio[4]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to audio_audio[5]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to audio_audio[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to audio_audio[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to audio_audio[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to audio_audio[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to audio_audio
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to gpio_readdata[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to gpio_readdata[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to gpio_readdata[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to gpio_readdata[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to gpio_readdata[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to gpio_readdata[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to gpio_readdata[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to gpio_readdata[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to gpio_readdata
+set_location_assignment PIN_A8 -to gpio_readdata[7]
+set_location_assignment PIN_A9 -to gpio_readdata[6]
+set_location_assignment PIN_A10 -to gpio_readdata[5]
+set_location_assignment PIN_B10 -to gpio_readdata[4]
+set_location_assignment PIN_AB19 -to gpio_readdata[3]
+set_location_assignment PIN_AA19 -to gpio_readdata[2]
+set_location_assignment PIN_Y19 -to gpio_readdata[1]
+set_location_assignment PIN_AB20 -to gpio_readdata[0]
+set_location_assignment PIN_A11 -to gpio_readdata[9]
+set_location_assignment PIN_B11 -to gpio_readdata[8]
+set_location_assignment PIN_AA6 -to bgpio_enable
+set_location_assignment PIN_Y5 -to bgpio_status
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to bgpio_status
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to bgpio_enable
+set_global_assignment -name VERILOG_FILE AI/RAM/mems/RAMl.v
+set_global_assignment -name VERILOG_FILE Signal/mems/RAMFFT.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/mems/RAMs.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_streamer.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_starter.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_send.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_registers.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_reader_memory.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_read.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_QCRC64_ISO.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_QCRC16.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_QCRC7.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_output.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_mutex.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_multiplex.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_loader.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_irq_sleeper.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_initizer.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_DMA.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_data_buffer.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_config.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_commander.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_av_writer.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_av_reader.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SPI_av_irq.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SpeedSPI_card_core.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/SpeedSPI.v
+set_global_assignment -name VERILOG_FILE Signal/tb.v
+set_global_assignment -name SYSTEMVERILOG_FILE Signal/sqrt.sv
+set_global_assignment -name VERILOG_FILE Signal/SignalProcessor.v
+set_global_assignment -name VERILOG_FILE Signal/Sig_zce.v
+set_global_assignment -name VERILOG_FILE Signal/Sig_saver.v
+set_global_assignment -name VERILOG_FILE Signal/Sig_power.v
+set_global_assignment -name VERILOG_FILE Signal/Sig_parameters.v
+set_global_assignment -name VERILOG_FILE Signal/Sig_module.v
+set_global_assignment -name VERILOG_FILE Signal/Sig_mel_spect.v
+set_global_assignment -name VERILOG_FILE Signal/Sig_loader.v
+set_global_assignment -name VERILOG_FILE Signal/Sig_hamming_window.v
+set_global_assignment -name VERILOG_FILE Signal/Sig_fft.v
+set_global_assignment -name VERILOG_FILE Signal/Sig_DMA.v
+set_global_assignment -name VERILOG_FILE Signal/Sig_core.v
+set_global_assignment -name VERILOG_FILE Signal/Sig_combiner.v
+set_global_assignment -name VERILOG_FILE Signal/Sig_collector.v
+set_global_assignment -name VERILOG_FILE Signal/mel_table.v
+set_global_assignment -name VERILOG_FILE Signal/hamming.v
+set_global_assignment -name VERILOG_FILE Signal/FTT.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_volumer.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_soft_launch.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_serializer.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_reducer.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_loader.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_gen.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_frequency_mul.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_freq.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_filter.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_FIFO_stream.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_FIFO_basi.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_DMA.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_config.v
+set_global_assignment -name VERILOG_FILE PWM_Audio/PWM_Audio.v
+set_global_assignment -name VERILOG_FILE Normalizer/Normalizer_sqrt.v
+set_global_assignment -name VERILOG_FILE Normalizer/Normalizer_saver.v
+set_global_assignment -name VERILOG_FILE Normalizer/Normalizer_parameters.v
+set_global_assignment -name VERILOG_FILE Normalizer/Normalizer_DMA.v
+set_global_assignment -name VERILOG_FILE Normalizer/Normalizer_division_block.v
+set_global_assignment -name VERILOG_FILE Normalizer/Normalizer_divider.v
+set_global_assignment -name VERILOG_FILE Normalizer/Normalizer_core.v
+set_global_assignment -name VERILOG_FILE Normalizer/Normalizer_controller.v
+set_global_assignment -name VERILOG_FILE Normalizer/Normalizer.v
+set_global_assignment -name VERILOG_FILE Microphone/Microphone.v
+set_global_assignment -name VERILOG_FILE Microphone/Mic_recv.v
+set_global_assignment -name VERILOG_FILE Microphone/Mic_parameters.v
+set_global_assignment -name VERILOG_FILE Microphone/Mic_filters.v
+set_global_assignment -name VERILOG_FILE Microphone/Mic_fifo_basic.v
+set_global_assignment -name VERILOG_FILE Microphone/Mic_divider.v
+set_global_assignment -name VERILOG_FILE Microphone/Mic_collector.v
+set_global_assignment -name VERILOG_FILE Microphone/Mic_buffer.v
+set_global_assignment -name VERILOG_FILE BLE/BLEUART_trans_byte.v
+set_global_assignment -name VERILOG_FILE BLE/BLEUART_recv_byte.v
+set_global_assignment -name VERILOG_FILE BLE/BLEUART_fifo_out.v
+set_global_assignment -name VERILOG_FILE BLE/BLEUART_fifo_in.v
+set_global_assignment -name VERILOG_FILE BLE/BLEUART_FIFO_basic.v
+set_global_assignment -name VERILOG_FILE BLE/BLEUART_error_catcher.v
+set_global_assignment -name VERILOG_FILE BLE/BLEUART_baudtick.v
+set_global_assignment -name VERILOG_FILE BLE/BLEUART_av.v
+set_global_assignment -name VERILOG_FILE BLE/BLE.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_wait.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_sum.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_status.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_sorter.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_sort.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_scorer.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_QCRC64_ISO.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_QCRC_sum.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_loader.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_interrupt.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_initizer.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_IDMA.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_final.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_filter.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_FIFO_Basic.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_error_catcher.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_demultiplex.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_decompressor4.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_decompressor2.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_decision.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_crosser.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_core_collect.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_core.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_comparer.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_category.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_buffer.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_av_writer.v
+set_global_assignment -name VERILOG_FILE AI/Comparer/AI_av_reader.v
+set_global_assignment -name VERILOG_FILE AI/DMA/AI_DMA_scalex.v
+set_global_assignment -name VERILOG_FILE AI/DMA/AI_DMA_parameters.v
+set_global_assignment -name VERILOG_FILE AI/DMA/AI_DMA_loader.v
+set_global_assignment -name VERILOG_FILE AI/DMA/AI_DMA_initizer.v
+set_global_assignment -name VERILOG_FILE AI/DMA/AI_DMA_dma.v
+set_global_assignment -name VERILOG_FILE AI/DMA/AI_DMA_division_block.v
+set_global_assignment -name VERILOG_FILE AI/DMA/AI_dma.v
+set_global_assignment -name VERILOG_FILE AI/RAM/AI_RAM_sector.v
+set_global_assignment -name VERILOG_FILE AI/RAM/AI_RAM_avst_loader.v
+set_global_assignment -name VERILOG_FILE AI/RAM/AI_RAM.v
+set_global_assignment -name VERILOG_FILE PLL/sm_altpll1_bb_bb.v
+set_global_assignment -name VERILOG_FILE PLL/sm_altpll1_bb.v
+set_global_assignment -name VERILOG_FILE PLL/sm_altpll1.v
+set_global_assignment -name QIP_FILE PLL/sm_altpll1.qip
+set_global_assignment -name QSYS_FILE system.qsys
+set_global_assignment -name VERILOG_FILE timer.v
+set_global_assignment -name VERILOG_FILE clock_man.v
+set_global_assignment -name VERILOG_FILE concat.v
+set_global_assignment -name VERILOG_FILE spi.v
+set_global_assignment -name VERILOG_FILE clk_div.v
+set_global_assignment -name VERILOG_FILE comparer.v
+set_global_assignment -name QIP_FILE sd_speed_clk.qip
+set_global_assignment -name QIP_FILE sd_read_clk.qip
+set_global_assignment -name VERILOG_FILE ai_ram.v
+set_global_assignment -name VERILOG_FILE restarter.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/spi_av_interfaces.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/spi_multiplex.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/spi_core.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/spi_streamer.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/spi_crc.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/spi_loader.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/spi_initizer.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/spi_comamnder.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/spi_mutex.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/spi_read.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/spi_send.v
+set_global_assignment -name VERILOG_FILE SpeedSPI/spi_buffers.v
+set_global_assignment -name VERILOG_FILE AI/ai_demultiplex.v
+set_global_assignment -name VERILOG_FILE AI/ai_idma.v
+set_global_assignment -name VERILOG_FILE AI/ai_buffers.v
+set_global_assignment -name VERILOG_FILE AI/ai_category.v
+set_global_assignment -name VERILOG_FILE AI/ai_core.v
+set_global_assignment -name VERILOG_FILE AI/core/ai_buffer.v
+set_global_assignment -name VERILOG_FILE AI/core/ai_loader.v
+set_global_assignment -name VERILOG_FILE AI/core/ai_crosser.v
+set_global_assignment -name VERILOG_FILE AI/core/ai_final.v
+set_global_assignment -name VERILOG_FILE AI/ai_sorter.v
+set_global_assignment -name VERILOG_FILE AI/ai_collector.v
+set_global_assignment -name VERILOG_FILE AI/ai_sort.v
+set_global_assignment -name VERILOG_FILE AI/ai_core_collect.v
+set_global_assignment -name VERILOG_FILE AI/ai_decission.v
+set_global_assignment -name VERILOG_FILE AI/ai_status.v
+set_global_assignment -name VERILOG_FILE AI/ai_av_interface.v
+set_global_assignment -name VERILOG_FILE AI/ai_initizer.v
+set_global_assignment -name VERILOG_FILE AI/ai_scorer.v
+set_global_assignment -name VERILOG_FILE AI/ai_sum.v
+set_global_assignment -name SOURCE_FILE db/SpeechAI.cmp.rdb
+set_global_assignment -name VERILOG_FILE clk_multiplier.v
+set_global_assignment -name VERILOG_FILE signal.v
+set_global_assignment -name VERILOG_FILE hamming.v
+set_global_assignment -name QIP_FILE RAMs.qip
+set_global_assignment -name SDC_FILE clocks.sdc
+set_global_assignment -name QIP_FILE RAMl.qip
+set_global_assignment -name VERILOG_FILE ScaleX.v
+set_global_assignment -name VERILOG_FILE ScaleMEL.v
+set_global_assignment -name QIP_FILE RAMscale.qip
+set_global_assignment -name VERILOG_FILE top.v
+set_global_assignment -name SYSTEMVERILOG_FILE sqrt.sv
+set_global_assignment -name VERILOG_FILE myfft.v
+set_global_assignment -name QIP_FILE RAMFFT.qip
+set_global_assignment -name VERILOG_FILE sound.v
+set_global_assignment -name VERILOG_FILE DiscController.v
+set_global_assignment -name QIP_FILE DiscRAM.qip
+set_global_assignment -name VERILOG_FILE BLE.v
+set_global_assignment -name VERILOG_FILE mel.v
+set_global_assignment -name VERILOG_FILE microphone.v
+set_global_assignment -name VERILOG_FILE distance.v
+set_global_assignment -name VERILOG_FILE SimpleDMA.v
+set_global_assignment -name VERILOG_FILE dma.v
+set_global_assignment -name QIP_FILE RAMScaleX.qip
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to button_button
+set_location_assignment PIN_W5 -to button_button
+set_location_assignment PIN_AA20 -to audio1_audio[7]
+set_location_assignment PIN_AB21 -to audio1_audio[6]
+set_location_assignment PIN_AA17 -to audio1_audio[5]
+set_location_assignment PIN_AB17 -to audio1_audio[4]
+set_location_assignment PIN_AA12 -to audio1_audio[3]
+set_location_assignment PIN_AA11 -to audio1_audio[2]
+set_location_assignment PIN_Y10 -to audio1_audio[1]
+set_location_assignment PIN_AB9 -to audio1_audio[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio1_audio[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio1_audio[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio1_audio[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio1_audio[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio1_audio[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio1_audio[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio1_audio[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio1_audio[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to audio1_audio
+set_global_assignment -name VERILOG_FILE not.v
+set_location_assignment PIN_AA15 -to vbutton_vbutton
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vbutton_vbutton
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

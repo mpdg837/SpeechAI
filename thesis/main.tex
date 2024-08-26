@@ -1,0 +1,242 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Engineer & Master Thesis, LaTeX Template          %%
+%% Copyleft by Piotr Woźniak & Artur M. Brodzki      %%
+%% Faculty of Electronics and Information Technology %%
+%% Warsaw University of Technology, Warsaw, 2019     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[
+    left=2.5cm,         % Sadly, generic margin parameter
+    right=2.5cm,        % doesnt't work, as it is
+    top=2.5cm,          % superseded by more specific
+    bottom=3cm,         % left...bottom parameters.
+    bindingoffset=6mm,  % Optional binding offset.
+    nohyphenation=true % You may turn off hyphenation, if don't like. =false
+]{eiti/eiti-thesis} % bazuje na clasie mwart
+
+
+\usepackage[
+    backend=bibtex,
+    style=ieee
+]{biblatex}
+\usepackage{csquotes}
+\usepackage{listings}
+\usepackage{xcolor}
+
+%\usepackage{amsmath}
+%\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+
+\langpol % Dla języka angielskiego mamy \langeng
+\graphicspath{{img/}}             % Katalog z~obrazkami.
+\addbibresource{bibliografia.bib} % Plik .bib z~bibliografią
+
+% dodanie kropki po numerze w~LoL https://tex.stackexchange.com/questions/597350/add-dot-after-number-of-listing-in-list-of-listings
+\makeatletter
+\xpatchcmd\lst@MakeCaption{\protect\numberline{\thelstlisting}\lst@@caption}{\protect\numberline{\thelstlisting.}\lst@@caption}{}{}
+%\makeatother
+%\makeatletter
+%\xpatchcmd{\LT@c@ption}{\protect\numberline{\thetable}}{\protect\numberline.{. \thetable . }}{}{}
+\makeatother
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+%--------------------------------------
+% Strona tytułowa
+%--------------------------------------
+%\MasterThesis % dla pracy inżynierskiej mamy 
+\EngineerThesis
+\instytut{Telekomunikacji}
+\kierunek{Telekomunikacja}
+\specjalnosc{Techniki teleinformatyczne}
+\title{
+	Węzeł IoT FPGA rozpoznający proste polecenia głosowe\\
+	wykorzystujący technologię Bluetooth Low Energy
+}
+\engtitle{ % Tytuł po angielsku do angielskiego streszczenia
+    FPGA IoT node recognizing simple spoken command \\
+    using Bluetooth Low Energy technology
+}
+\author{Michał Podgajny}
+\album{311412}
+\promotor{dr inż. Paweł Tomaszewicz}
+\date{\the\year}
+\maketitle
+
+\newpage
+%--------------------------------------
+% Streszczenie po polsku
+%--------------------------------------
+\streszczenie W~pracy przedstawiono koncepcję, implementację oraz testy realizacji programowo-sprzętowej węzła IoT z~wykorzystaniem układu FPGA rozpoznającego proste mówione rozkazy. Słowa przekazywano dalej za pomocą standardu komunikacyjnego BLE do dalszego przetworzenia przez system. Wykorzystano algorytm K najbliższych elementów oraz autorską metodę analizy sygnału dźwiękowego opartą o~elementy metody MFCC.
+
+Przedstawiono proces opracowania metody rozpoznawania wymawianych słów dla urządzeń o~małych zasobach, przygotowanego na podstawie modelu referencyjnego. Opracowano platformę SoC sprzętową wraz z~komponentami obliczeniowymi oraz wejściami i~wyjściami dla układów zewnętrznych. Przygotowano oprogramowanie wspierające stworzony system oraz przeprowadzono testy urządzenia zbudowanego w~SoC. Zaprezentowano i~omówiono wyniki porównania z~inną podobną realizacją.
+
+\slowakluczowe IoT, FPGA, BLE, mowa, sztuczna inteligencja, rozpoznawanie mowy, przetwarzanie sygnałów, systemy wudowane, oprogramowanie bare metal, SoC
+
+\newpage
+
+%--------------------------------------
+% Streszczenie po angielsku
+%--------------------------------------
+\abstract 
+The thesis presents the concept, implementation, and tests of a~software-hardware realization of an IoT node using an FPGA system that recognizes simple spoken commands. The words were further transmitted via the BLE communication standard for further processing by a~larger system. The K-nearest neighbors algorithm and a~proprietary method for audio signal analysis based on elements of the MFCC method were utilized.
+
+The development process of the word recognition method for devices with limited resources is presented, including the preparation of a~reference model based on this method. A~hardware SoC platform was developed along with hardware computational components and input-output interfaces for external systems. Supporting software for the created system was prepared, and tests were conducted on a~device using the developed SoC. The results of comparisons with another similar implementation were presented and discussed.
+
+
+\keywords IoT, FPGA, BLE, speech, artificial intelligence, speech recognition, signal processing, embedded systems, bare metal software, SoC
+\newpage
+
+%--------------------------------------
+% Oświadczenie o~autorstwie
+%--------------------------------------
+\makeauthorship
+\blankpage
+
+%--------------------------------------
+% Spis treści
+%--------------------------------------
+\thispagestyle{empty}
+\tableofcontents
+%\blankpage
+
+%--------------------------------------
+% Rozdziały
+%--------------------------------------
+\input{tex/1-wstep}         % W~długich pracach
+%\input{tex/2-de-finibus}    % wygodnie jest trzymać
+%\input{tex/3-code-listings} % każdy rozdział w~osobnym pliku. 
+%\input{tex/4-rozdz-PT} % każdy rozdział w~osobnym pliku. 
+\newpage % Zaleca się otwieranie rozdziału od nowej strony
+\section{Podsumowanie}      % Ale można też pisać w~jednym. 
+W pracy zaprezentowano koncepcję i~implementację sprzętowo-programową węzła IoT, wykonanego przy użyciu układu FPGA, rozpoznającego proste wymawiane przez użytkownika rozkazy. Prace rozpoczęto od przeglądu metod detekcji mowy. W~wyniku analizy zdobytych informacji okazało się, że warto wykorzystać algorytmy sztucznej inteligencji oraz metody oparte na analizie sygnałów za pomocą szybkiej transformacji Fouriera. Spośród algorytmów AI wybrano algorytm K-najbliższych sąsiadów.
+
+Stworzono model referencyjny, który umożliwił testowanie różnych podejść do problemu. Opracowano autorską metodę kompresji danych, metodę tworzenia profili dźwięków oraz klasyfikowania wymawianych wyrazów. Model przygotowano na podstawie zewnętrznych źródeł, przeprowadzono wstępne testy i~wyciągnięto wnioski dotyczące budowy urządzenia, takie jak konieczność dodania czujnika odległości sprawdzającego, czy użytkownik znajduje się w~pobliżu węzła. Sprawdzono również precyzję wykryć opracowanego modelu i~przygotowano nośniki danych do przechowywania modelu.
+
+Następnie opracowano implementację sprzętową komponentów odpowiedzialnych za detekcję nagranego dźwięku. Stworzono komponent obliczający profil wybranego dźwięku oraz klasyfikator na potrzeby sztucznej inteligencji. Opracowano również komponenty wspomagające operacje związane z~ładowaniem danych przez klasyfikator oraz komponent normalizujący. Zadbano o~zwielokrotnienie obliczeń poprzez realizację implementacji strumieniowych i~wykonywanie operacji w~wielu rdzeniach.
+
+Zaprojektowano system cyfrowy SoC. Dodano komponenty związane z~obsługą wejść i~wyjść dla układów zewnętrznych – komunikujących się z~modułem nadawczo-odbiorczym dla łączności bezprzewodowej BLE, odbierających próbki z~mikrofonu oraz z~czujnikiem odległości. Stworzono komponenty związane z~odbiorem i~odtwarzaniem dźwięku oparte na filtrach cyfrowych FIR.
+
+Opracowano także oprogramowanie współpracujące z~implementacją sprzętową, umożliwiające zastosowanie systemu dialogowego do potwierdzenia wykrytego wyrazu, wyświetlanie komunikatów dotyczących stanu urządzenia użytkownikowi oraz diagnostykę węzła w~czasie rzeczywistym. Stworzono prosty protokół wymiany danych pomiędzy węzłem a~urządzeniem odbiorczym poprzez łączność BLE. Płytka z~układem FPGA została zaprogramowana, tworząc rozwiązanie standalone, które można testować w~terenie bez konieczności podłączania do komputera. W~tym celu zaprogramowano pamięć flash wbudowaną w~układ.
+
+Projekt jest jednak jedynie demonstratorem sprawdzającym możliwość użycia układów FPGA w~węźle IoT wymagającym akceleracji sprzętowej pewnych operacji. Uzyskane podczas testów wyniki pokazują, że jest to wykonalne w~formie wygodnej dla użytkownika. Wprowadzenie zaproponowanych w~rozdziale 7.8 zmian powinno skutkować poprawą wydajności całego rozwiązania.
+%--------------------------------------------
+% Literatura
+%--------------------------------------------
+\newpage
+
+\printbibliography
+
+\acronymlist
+\acronym{KNN}{Klasyfikator K-najbliższych elementów}
+\acronym{KWS}{Small-footprint Keyword Spotting}
+\acronym{DS-CNN}{Convolutional Neural Networks}
+\acronym{ARM}{Advanced RISC Machine}
+\acronym{CPU}{Central Processing Unit}
+\acronym{SoC}{System on a~Chip}
+
+%--------------------------------------------
+% Spisy (opcjonalne)
+%--------------------------------------------
+
+% Wykaz symboli i~skrótów.
+% Pamiętaj, żeby posortować symbole alfabetycznie
+% we własnym zakresie. Ponieważ mało kto używa takiego wykazu, 
+% uznałem, że robienie automatycznie sortowanej listy
+% na poziomie LaTeXa to za duży overkill. 
+% Makro \acronymlist generuje właściwy tytuł sekcji, 
+% w~zależności od języka.
+% Makro \acronym dodaje skrót/symbol to listy, 
+% zapewniając podstawowe formatowanie.
+% //AB
+\vspace{0.8cm}
+%\acronymlist
+%\acronym{EiTI}{Wydział Elektroniki i~Technik Informacyjnych}
+%\acronym{PW}{Politechnika Warszawska}
+
+%\listoffigures              % Spis obrazków. 
+%\vspace{1cm}                % vertical space
+%\listoftables               % Spis tabel. 
+%\vspace{1cm}               % vertical space
+%\lstlistoflistings 		% Spis wydruków
+%\vspace{1cm}                % vertical space
+%\listofappendices           % Spis załączników
+
+% Załączniki
+
+
+\listoffigures              % Spis obrazków. 
+
+\newpage
+\appendix{Załącznik 1}
+
+\FloatBarrier %zatrzymanie przenoszenia rysunku
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.99\textwidth]{platform1.png}
+\end{figure}
+\FloatBarrier %zatrzymanie przenoszenia rysunku
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{platform2.png}
+	\caption{Zrzut ekranu z~ułożeniem komponentów SoC w~\textit{Platform Designerze}}
+\end{figure}
+
+\FloatBarrier %zatrzymanie przenoszenia rysunku
+$$$$
+\newpage
+\appendix{Załącznik 2}
+% Załączniki
+\FloatBarrier %zatrzymanie przenoszenia rysunku
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{utilization.png}
+	\caption{Rozłożenie bloków po syntezie projektu w~układzie \textit{FPGA}. Bloki (\textit{logic elements}) zaznaczono kolorem ciemnoniebieskim , bloki \textit{DSP} szarym zaś pamięci \textit{M9K} zielonym.}
+\end{figure}
+\FloatBarrier %zatrzymanie przenoszenia rysunku
+\newpage
+
+% jesli sa w~Zalacznikach tabele, rysunki, tak na szybko.. i~wylaczyc \listofappendices
+%\section*{Załącznik I. Wykaz komend AT czujnika parkowania AN-101D firmy Shenzhen Winext Technology}
+%%\appendix{Wykaz komend AT czujnika parkowania AN-101D firmy Shenzhen Winext Technology.}
+%\setcounter{section}{1}
+%\renewcommand\thetable{I.\arabic{table}}
+%\input{tex/zal-1-komendy-at}
+%
+%\newpage
+%\section*{Załącznik II. Ramki komunikacyjne czujnika parkowania AN-101D firmy Shenzhen Winext Technology}
+%%\appendix{Ramki komunikacyjne czujnika parkowania AN-101D firmy Shenzhen Winext Technology.}
+%\renewcommand\thefigure{II.\arabic{figure}}
+%\input{tex/zal-2-ramki-komunikacyjne}
+
+
+
+
+\end{document} % Dobranoc. 
+

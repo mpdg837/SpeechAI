@@ -1,0 +1,133 @@
+<mxfile host="Electron" modified="2024-05-21T09:32:44.391Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="uENa_Z6uptMlqDMZlWnh" version="23.1.5" type="device">
+  <diagram name="Strona-1" id="ckxG_nOQ_maH-sQQJCny">
+    <mxGraphModel dx="1793" dy="1196" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-1" value="&amp;nbsp;Wersja 1B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="70" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-2" value="AIDB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-3" value="Nazwa aplikacji 12B (16 znaki Base64)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="70" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-24" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-29" value="0x0" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="70" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-30" value="0x1d" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="100" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-34" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="4nAtlYZP7ZLarm_Cd7tP-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="210" as="sourcePoint" />
+            <mxPoint x="270" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-35" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="4nAtlYZP7ZLarm_Cd7tP-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="80" as="sourcePoint" />
+            <mxPoint x="100" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-36" value="[7:4] Wersja" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="20" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-38" value="[3:0] Wydanie" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="20" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-39" value="&amp;nbsp;Wersja bazy 1B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-42" value="Vendor modelu (dostawca) 24B (32 znaki Base64)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="100" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-44" value="Nazwa modelu 24B (32 B64)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-46" value="0x0,0xAA,0xBB&lt;br&gt;(wzór sprawdzający)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="70" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-48" value="B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-49" value="Nazwa bazy 12B (16 znaków)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="160" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-50" value="Adres z precyzją do 256 sektorów (2B)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="160" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-51" value="CRC32 4B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="160" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-53" value="packet_size 1B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-54" value="spect_size 1B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-56" value="spect_in_base 1B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="160" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-57" value="kompresja &lt;br&gt;1B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="160" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-58" value="B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-59" value="Nazwa bazy 12B (16 znaków)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="220" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-60" value="Adres z precyzją do 256 sektorów (2B)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="220" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-61" value="CRC32 4B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="220" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-62" value="packet_size 1B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-63" value="spect_size 1B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-64" value="spect_in_base 1B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="220" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-65" value="kompresja &lt;br&gt;1B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="220" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-66" value="L" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="250" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-67" value="Nazwa kategorii 12B (16 znaków)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="250" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-68" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-69" value="L" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-70" value="Nazwa kategorii 12B (16 znaków)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="320" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-71" value="E" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="350" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-73" value="..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-74" value="xxx" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4nAtlYZP7ZLarm_Cd7tP-75" value="Suma kontrolna 1B" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="400" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
